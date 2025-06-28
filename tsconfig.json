@@ -1,6 +1,19 @@
-import dotenv from "dotenv";
-dotenv.config();
-export const RPC_WS_URL = process.env.RPC_WS_URL!;
-export const POSTGRES_URL = process.env.POSTGRES_URL!;
-export const API_PORT = parseInt(process.env.API_PORT || "4000");
-
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx"
+  },
+  "include": ["src"]
+}
